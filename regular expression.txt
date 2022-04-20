@@ -1,0 +1,25 @@
+// libraary for  regular expressions
+using System.Text.RegularExpressions;
+
+ public static bool textcheck(params TextBox[] tx)
+        {
+            Regex r=new Regex (@"[a-zA-Z]+ ");
+
+            foreach(TextBox t  in tx)
+            {
+                if(!r.IsMatch(t.Text))
+                {
+                    MessageBox.Show("enter only Alphabet"+t.Name);
+                }
+                else
+                {
+                    return true;
+                }
+
+            }
+
+            return  false;
+
+        }
+syntax if(carclass.numbercheck(txtcreat)&&carclass.numbercheck(txtupdate)&&carclass.textcheck(txtadres)&&carclass.numbercheck(txtbirth)&&carclass.textcheck(txtcity)&&carclass.numbercheck(txtcredit)&&carclass.textcheck(txtemail)&&carclass.textcheck(txtname)&&carclass.numbercheck(txtphone)&&carclass.numbercheck(txtpostal)&&carclass.textcheck(txtsurname))
+            {  qry,and code  }
