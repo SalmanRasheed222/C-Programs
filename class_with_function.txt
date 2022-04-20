@@ -1,0 +1,107 @@
+using System;
+
+namespace classwith_function
+{
+    class employee {
+        private int id, salery;
+        private string name;
+
+        public void setid( int i)
+        {
+          id = i;
+        }
+        public int getid()
+        {
+            return id;
+        }
+        public void setsalary(string s)
+        {
+            salery = Convert.ToInt32(s);
+        }
+        public int setsalary()
+        {
+            return salery;
+        }
+    
+    public void setname (string n)
+        {
+            name = n;
+        }
+    public string getname()
+        {
+            return name;
+        }
+        
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            employee emp1 = new employee();
+            employee emp2= new employee();
+            employee emp3= new employee();
+            employee emp4= new employee();
+            employee emp5= new employee();
+           
+            Console.WriteLine("enter id");
+            emp1.setid(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter name");
+            emp1.setname(Console.ReadLine());
+            Console.WriteLine(emp1.getid());
+            Console.WriteLine(emp1.getname());
+
+            Console.WriteLine("enter id");
+            emp2.setid(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter name");
+            emp3.setname(Console.ReadLine());
+            Console.WriteLine(emp2.getid());
+            Console.WriteLine(emp2.getname());
+
+            Console.WriteLine("enter id");
+            emp3.setid(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter name");
+            emp3.setname(Console.ReadLine());
+            Console.WriteLine(emp3.getid());
+            Console.WriteLine(emp3.getname());
+
+            
+            Console.WriteLine("enter id");
+            emp4.setid(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter name");
+            emp4.setname(Console.ReadLine());
+            Console.WriteLine(emp4.getid());
+            Console.WriteLine(emp4.getname());
+
+
+            Console.WriteLine("enter id");
+            emp5.setid(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter name");
+            emp5.setname(Console.ReadLine());
+            Console.WriteLine(emp5.getid());
+            Console.WriteLine(emp5.getname());
+
+            employee max = new employee();
+            max = emp1;
+
+            if (emp2.getid() > max.getid())
+            {
+                max = emp2;
+            
+            }
+            if (emp3.getid() > max.getid())
+            {
+                max = emp3;
+
+            }
+            if (emp4.getid() > max.getid())
+            {
+                max = emp4;
+                    
+
+            }
+
+
+
+        }
+    }
+}

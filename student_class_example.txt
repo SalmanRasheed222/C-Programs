@@ -1,0 +1,140 @@
+using System;
+
+namespace classproj
+
+{
+    class student
+    {
+        int number,rno;
+        string name;
+
+        public void setrollno(int r)
+        {
+            rno = r;
+        }
+        public int getrollno()
+        {
+            return rno;
+        }
+        public void setnumber(int i)
+        {
+            number = i;
+        }
+        public int getnumber()
+        {
+            return number;
+        }
+
+        public void setname(string s)
+        {
+            name = s;
+        }
+        public string getname()
+        {
+            return name;
+        }
+
+    }
+
+
+
+
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            student s1 = new student();
+            student s2 = new student();
+            student s3 = new student();
+            student s4 = new student();
+            student s5 = new student();
+            
+
+            Console.WriteLine("enter name:");
+            s1.setname(Console.ReadLine());
+            Console.WriteLine("enter roll num");
+            s1.setrollno(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter number");
+            s1.setnumber(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine(s1.getname());
+            Console.WriteLine(s1.getrollno());
+            Console.WriteLine(s1.getnumber());
+
+            Console.WriteLine("enter name:");
+            s2.setname(Console.ReadLine());
+            Console.WriteLine("enter roll num");
+            s2.setnumber(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter number");
+            s2.setnumber(Convert.ToInt32(Console.ReadLine()));
+
+            Console.WriteLine(s2.getname());
+            Console.WriteLine(s2.getrollno());
+            Console.WriteLine(s2.getnumber());
+
+            Console.WriteLine("enter name:");
+            s3.setname(Console.ReadLine());
+            Console.WriteLine("enter roll num");
+            s3.setnumber(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter number");
+            s3.setnumber(Convert.ToInt32(Console.ReadLine()));
+
+            Console.WriteLine(s3.getname());
+            Console.WriteLine(s3.getrollno());
+            Console.WriteLine(s3.getnumber());
+
+            Console.WriteLine("enter name:");
+            s4.setname(Console.ReadLine());
+            Console.WriteLine("enter roll num");
+            s4.setnumber(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter number");
+            s4.setnumber(Convert.ToInt32(Console.ReadLine()));
+
+            Console.WriteLine(s4.getname());
+            Console.WriteLine(s4.getrollno());
+            Console.WriteLine(s4.getnumber());
+
+            Console.WriteLine("enter name:");
+            s5.setname(Console.ReadLine());
+            Console.WriteLine("enter roll num");
+            s5.setnumber(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("enter number");
+            s5.setnumber(Convert.ToInt32(Console.ReadLine()));
+
+            Console.WriteLine(s5.getname());
+            Console.WriteLine(s5.getrollno());
+            Console.WriteLine(s5.getnumber());
+
+            student max = new student();
+            max = s1;
+            if (s2.getnumber() > max.getnumber())
+            {
+                max = s2;
+            }
+            if (s3.getnumber() > max.getnumber())
+            {
+                max = s3;
+            }
+            if (s4.getnumber() > max.getnumber())
+            {
+                max = s4;
+            }
+            if (s4.getnumber() > max.getnumber())
+            {
+                max = s4;
+            }
+            if (s5.getnumber() > max.getnumber())
+            {
+                max = s5;
+            }
+         
+            Console.WriteLine(max.getname());
+            Console.WriteLine(max.getrollno());
+            Console.WriteLine(max.getnumber());
+            Console.ReadKey();
+
+        }
+    }
+}

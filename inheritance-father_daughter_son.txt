@@ -1,0 +1,52 @@
+using System;
+
+namespace father_daughter_son
+{
+  class father
+    {
+        public string fname { get; set; }
+
+    }
+
+    class daughter:father
+    {
+        public string dname { get; set; }
+    }
+    class son : father {
+        public string sname { get; set; }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            father f = new father();
+            son s = new son();
+            daughter d  = new daughter();
+
+            Console.WriteLine("enter son name:");
+            s.sname = Console.ReadLine();
+            Console.WriteLine("enter father name:");
+            f.fname = Console.ReadLine();
+            Console.WriteLine("son name is:"+s.sname+" and father name is "+f.fname);
+
+            Console.WriteLine("enter daughter name:");
+            d.dname = Console.ReadLine();
+            Console.WriteLine("enter father name:");
+            f.fname = Console.ReadLine();
+            Console.WriteLine("daughter name is:" + d.dname + " and father name is " + f.fname);
+            Console.WriteLine();
+
+            if (s.fname == d.fname)
+            {
+                Console.WriteLine(s.sname+" and "+d.dname+" are brother and sister");
+            }
+       else
+            {
+                Console.WriteLine(s.sname + " and " + d.dname + " are not brother and sister");
+            }
+
+
+        }
+   }
+}
+

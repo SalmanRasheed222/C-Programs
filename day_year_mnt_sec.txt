@@ -1,0 +1,103 @@
+using System;
+
+namespace avg
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // write a program input day and conver into year 
+            // write a program input day and conver into month
+            // // write a program input day and conver into weeks
+            // write a program input year and print number of days 
+            // write a program input year and print number of month
+            // // write a program input year and print number of week
+
+            //int sec, h;
+            //Console.WriteLine("enter the value");
+            //sec = Convert.ToInt32(Console.ReadLine());
+            //h = sec / 3600;
+
+            //Console.WriteLine(h);
+
+
+            //int sec, h;
+            //Console.WriteLine("enter the value");
+            //h = Convert.ToInt32(Console.ReadLine());
+            //sec = h * 3600;
+
+            //Console.WriteLine(sec);
+
+            //int a, b, x;
+
+            //Console.WriteLine("enter the value");
+            //a = Convert.ToInt32(Console.ReadLine());
+            //b= Convert.ToInt32(Console.ReadLine());
+            //x = a * a + b * b + 2 * a * b;
+
+            //Console.WriteLine(x);
+
+
+
+            //1st program
+
+            //int d, y;
+            /*  Console.WriteLine("enter the day");
+              d = Convert.ToInt32(Console.ReadLine());
+              y = d * 365;
+              Console.WriteLine("year is :" + y);*/
+
+            //int d, m;
+            //Console.WriteLine("enter the day");
+            //d = Convert.ToInt32(Console.ReadLine());
+            //m = d * 30;
+            //Console.WriteLine("year is :" + m);
+
+            //int d, w;
+            //Console.WriteLine("enter the day");
+            //d = Convert.ToInt32(Console.ReadLine());
+            //w = d * 7;
+            //Console.WriteLine("year is :" + w);
+
+            //int d, y;
+            //Console.WriteLine("enter the year");
+            //y = Convert.ToInt32(Console.ReadLine());
+            //d = y * 365;
+            //Console.WriteLine("year is :" + d);
+
+            //int m, y;
+            //Console.WriteLine("enter the year");
+            //y = Convert.ToInt32(Console.ReadLine());
+            //m = y *12;
+            //Console.WriteLine("year is :" + m);
+
+            //int d, y;
+            //Console.WriteLine("enter the year");
+            //y = Convert.ToInt32(Console.ReadLine());
+            //d = y * 365;
+            //Console.WriteLine("year is :" + d);
+
+            //int w, y;
+            //Console.WriteLine("enter the year");
+            //y = Convert.ToInt32(Console.ReadLine());
+            //w = y * 52;
+            //Console.WriteLine("year is :" + w);
+
+
+            //Console.WriteLine("Welcome In C# Programming...");
+            int sub1, sub2, sub3, sum;
+            Console.WriteLine("Input number of subject 1");
+            sub1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input number of subject 2");
+            sub2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input number of subject 2");
+            sub3 = Convert.ToInt32(Console.ReadLine());
+            sum = sub1 + sub2 + sub3;
+            Console.WriteLine("The Sum of Sub is :"+sum);
+
+
+
+
+        }
+    }
+}

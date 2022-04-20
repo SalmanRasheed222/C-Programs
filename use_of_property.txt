@@ -1,0 +1,68 @@
+using System;
+
+namespace use_of_property
+{
+   class student
+    {
+        public string name { get; set; }
+        public int number { get; set; }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            student s1 = new student();
+            student s2 = new student();
+            student s3 = new student();
+            student s4 = new student();
+            student s5  = new student();
+
+            Console.WriteLine("enter name");
+            s1.name = (Console.ReadLine());
+            Console.WriteLine("enter number");
+            s1.number =Convert.ToInt32( Console.ReadLine());
+
+            Console.WriteLine("enter name");
+            s2.name = (Console.ReadLine());
+            Console.WriteLine("enter number");
+            s2.number = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter name");
+            s3.name = (Console.ReadLine());
+            Console.WriteLine("enter number");
+            s3.number = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter name");
+            s4.name = (Console.ReadLine());
+            Console.WriteLine("enter number");
+            s4.number = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter name");
+            s5.name = (Console.ReadLine());
+            Console.WriteLine("enter number");
+            s5.number = Convert.ToInt32(Console.ReadLine());
+
+            student max =  new student();
+            max.number = s1.number;
+            if (max.number > s2.number)
+            {
+                max = s2;
+            }
+            if (max.number > s3.number)
+            {
+                max = s3;
+            }
+            if (max.number > s4.number)
+            {
+                max = s4;
+            }
+            if (max.number > s5.number)
+            {
+                max = s5;
+            }
+            Console.WriteLine(max.number);
+            Console.WriteLine(max.name);
+        }
+    }
+}

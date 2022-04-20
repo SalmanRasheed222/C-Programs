@@ -1,0 +1,46 @@
+using System;
+
+namespace rectangle_class_proj
+{
+    class rectangle
+    {
+
+        double length, width;
+
+        public void acceptdetails()
+        {
+            length = 4.5;
+            width = 3.4;
+
+        }
+        public double getarea()
+        {
+            return length * width;
+        }
+        public void Display()
+        {
+            Console.WriteLine("Length:{0}", length);
+            Console.WriteLine("width:{0}", width);
+            Console.WriteLine("area:{0}", getarea());
+        }
+
+    }
+
+
+
+    class executerectangle
+    {
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                rectangle r = new rectangle();
+                r.acceptdetails();
+                r.Display();
+                Console.ReadKey();
+            }
+
+        }
+    }
+}

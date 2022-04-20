@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    public class student
+    {
+      public  string name;
+
+        public void setname(string n)
+        {
+            name = n;
+        }
+        public string  getname()
+        {
+            return name;
+        }
+
+    }
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             student s1 = new student();
+             student s2= new student();
+             student s3 = new student();
+             student s4 = new student();
+             student s5= new student();
+            Console.WriteLine("Enter name of Student 1");
+            s1.name = Console.ReadLine();
+            Console.WriteLine("Enter name of Student 2");
+            s2.name = Console.ReadLine();
+            Console.WriteLine("Enter name of Student 3");
+            s3.name = Console.ReadLine();
+            Console.WriteLine("Enter name of Student 4");
+            s4.name = Console.ReadLine();
+            Console.WriteLine("Enter name of Student 5");
+            s5.name = Console.ReadLine();
+            Console.WriteLine(s1.name+","+s2.name+","+s3.name+","+s4.name+","+s5.name);
+
+
+
+            Console.ReadKey();
+        }
+    }
+}

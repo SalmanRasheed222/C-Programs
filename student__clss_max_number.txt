@@ -1,0 +1,76 @@
+using System;
+
+namespace ConsoleApp2
+
+{
+    class student
+    {
+        public int num;
+        public string name;
+      
+    }
+  
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            student s1 = new student();
+            student s2 = new student();
+            student s3 = new student();
+            student s4 = new student();
+            student s5 = new student();
+            student max =new student();
+
+            Console.WriteLine("Enter name:");
+            s1.name = Console.ReadLine();
+            Console.WriteLine("Enter number:");
+            s1.num =Convert.ToInt32(Console.ReadLine());
+        
+          
+
+            Console.WriteLine("Enter name:");
+            s2.name = Console.ReadLine();
+            Console.WriteLine("Enter number:");
+            s2.num = Convert.ToInt32(Console.ReadLine());
+            
+
+            Console.WriteLine("Enter name:");
+            s3.name = Console.ReadLine();
+            Console.WriteLine("Enter number:");
+            s3.num = Convert.ToInt32(Console.ReadLine());
+            
+
+            Console.WriteLine("Enter name:");
+            s4.name = Console.ReadLine();
+            Console.WriteLine("Enter number:");
+            s4.num = Convert.ToInt32(Console.ReadLine());
+           
+           
+            Console.WriteLine("Enter name:");
+            s5.name = Console.ReadLine();
+            Console.WriteLine("Enter number:");
+            s5.num = Convert.ToInt32(Console.ReadLine());
+            
+            max = s1;
+            if (s2.num>max.num)
+            {
+                max = s2;
+            }
+            if (s3.num > max.num)
+            {
+                max = s3;
+            }
+            if (s4.num > max.num)
+            {
+                max = s4;
+            }
+            if (s5.num > max.num)
+            {
+                max = s5;
+            }
+            Console.WriteLine("student name is:" + max.name);
+            Console.WriteLine("number is:" + max.num);
+            Console.ReadKey();
+        }
+    }
+}
